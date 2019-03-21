@@ -14,7 +14,7 @@ module.exports = {
     // webpack-dev-server
     devServer: {
         contentBase: './dist', //本地服务器所加载的页面所在的目录
-        port: '8080',
+        port: '8081',
         host: 'localhost',
         historyApiFallback: true, //不跳转
         inline: true,
