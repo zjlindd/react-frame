@@ -52,7 +52,13 @@ module.exports = {
             },
             {
                 test: /\.scss/,
-                use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'sass-loader'],
+                use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'sass-loader',{
+                        loader: 'sass-resources-loader',
+                        options:{
+                            resources:['./src/assets/scss/mix.scss'],
+                            resources:['./src/assets/scss/reset.scss']
+                        }
+                    }],
                 exclude: /node_modules/,
                 include: path.resolve(__dirname, 'src')
             },
