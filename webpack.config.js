@@ -13,7 +13,7 @@ module.exports = {
     },
     // webpack-dev-server
     devServer: {
-        contentBase: './dist', //本地服务器所加载的页面所在的目录
+        contentBase: './dist', //本地服务器所加载的页面所在的目录 --URL的根目录。如果不设定的话，默认指向项目根目录
         port: '8081',
         host: 'localhost',
         historyApiFallback: true, //不跳转

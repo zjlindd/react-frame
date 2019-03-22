@@ -1,4 +1,10 @@
-.hello{
-  background: darkcyan;
-  color: darkgray;
+.mine{
+  width: 100%;
+  height: px2rem(600);
+  line-height: px2rem(600);
+  box-sizing: border-box;
+  text-align: center;
+  background: #eeb249;
+  color: red;
+  font-size: px2rem(40);
 }
