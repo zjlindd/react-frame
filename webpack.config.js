@@ -14,7 +14,7 @@ module.exports = {
     // webpack-dev-server
     devServer: {
         contentBase: './dist', //本地服务器所加载的页面所在的目录 --URL的根目录。如果不设定的话，默认指向项目根目录
-        port: '8081',
+        port: '8082',
         host: 'localhost',
         historyApiFallback: true, //不跳转
         inline: true,
@@ -55,8 +55,8 @@ module.exports = {
                 use: [{ loader: MiniCssExtractPlugin.loader }, 'css-loader', 'sass-loader',{
                         loader: 'sass-resources-loader',
                         options:{
-                            resources:['./src/assets/scss/mix.scss'],
-                            resources:['./src/assets/scss/reset.scss']
+                            resources:['./src/assets/scss/mix.scss']
+
                         }
                     }],
                 exclude: /node_modules/,
